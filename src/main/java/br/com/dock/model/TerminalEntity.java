@@ -1,6 +1,5 @@
 package br.com.dock.model;
 
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -8,34 +7,39 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
 
 @Entity
 @Table(name = "TERMINAL")
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-public class TerminalEntity{
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+public class TerminalEntity {
 
 	@Id
 	@NotNull
 	private Integer logic;
-	
+
 	@NotNull
 	private String serial;
-	
+
 	@NotNull
 	private String model;
-	
+
 	@Min(value = 0)
 	private Integer sam;
-	
+
 	private String ptid;
 	private Integer plat;
-	
+
 	@NotNull
 	private String version;
-	
+
 	private Integer mxr;
 	private Integer mxf;
-	private String PVERFM;
+
+	@SerializedName(value = "PVERFM")
+	@JsonProperty("PVERFM")
+	private String pverfm;
 
 	/**
 	 * @return the logic
@@ -164,17 +168,17 @@ public class TerminalEntity{
 	}
 
 	/**
-	 * @return the pVERFM
+	 * @return the pverfm
 	 */
-	public String getPVERFM() {
-		return PVERFM;
+	public String getPverfm() {
+		return pverfm;
 	}
 
 	/**
-	 * @param pVERFM the pVERFM to set
+	 * @param pverfm the pverfm to set
 	 */
-	public void setPVERFM(String pVERFM) {
-		PVERFM = pVERFM;
+	public void setPverfm(String pverfm) {
+		this.pverfm = pverfm;
 	}
 
 }

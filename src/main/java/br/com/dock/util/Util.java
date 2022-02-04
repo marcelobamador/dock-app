@@ -18,7 +18,7 @@ public class Util {
 			returnDTO.setMxr(termEntity.getMxr());
 			returnDTO.setPlat(termEntity.getPlat());
 			returnDTO.setPtid(termEntity.getPtid());
-			returnDTO.setPVERFM(termEntity.getPVERFM());
+			returnDTO.setPVERFM(termEntity.getPverfm());
 			returnDTO.setSam(termEntity.getSam());
 			returnDTO.setSerial(termEntity.getSerial());
 			returnDTO.setVersion(termEntity.getVersion());
@@ -36,27 +36,10 @@ public class Util {
 		returnDTO.setMxr(terminalEntity.getMxr());
 		returnDTO.setPlat(terminalEntity.getPlat());
 		returnDTO.setPtid(terminalEntity.getPtid());
-		returnDTO.setPVERFM(terminalEntity.getPVERFM());
+		returnDTO.setPVERFM(terminalEntity.getPverfm());
 		returnDTO.setSam(terminalEntity.getSam());
 		returnDTO.setSerial(terminalEntity.getSerial());
 		returnDTO.setVersion(terminalEntity.getVersion());
 		return returnDTO;
-	}
-	
-	public static TerminalEntity converString(String body) {
-		String array[] = new String[10];
-		array = body.split(";");
-		TerminalEntity terminalEntity = new TerminalEntity();
-		terminalEntity.setLogic(Integer.parseInt(array[0]));
-		terminalEntity.setSerial(array[1]);
-		terminalEntity.setModel(array[2]);
-		terminalEntity.setSam(Integer.parseInt(array[3]));
-		terminalEntity.setPtid(array[4]);
-		terminalEntity.setPlat(Integer.parseInt(array[5]));
-		terminalEntity.setVersion(array[6]);
-		terminalEntity.setMxr(Integer.parseInt(array[7]));
-		terminalEntity.setMxf(Integer.parseInt(array[8]));
-		terminalEntity.setPVERFM(array[9]);
-		return terminalEntity;
 	}
 }

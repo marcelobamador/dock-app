@@ -10,7 +10,7 @@ public class DockConstants {
     public static final String JSON_OBJECT_VERSION = "version";
     public static final String JSON_OBJECT_MXR = "mxr";
     public static final String JSON_OBJECT_MXF = "mxf";
-    public static final String JSON_OBJECT_VERFM = "VERFM";
+    public static final String JSON_OBJECT_VERFM = "PVERFM";
 
     public static final int JSON_OBJECT_INDEX_LOGIC = 0;
     public static final int JSON_OBJECT_INDEX_SERIAL = 1;

@@ -67,7 +67,7 @@ public class TerminalServiceImpl implements TerminalService {
 			terminalEntityDb.setPtid(changeTerminal.getPtid());
 		
 		if(changeTerminal.getPVERFM() == null || !changeTerminal.getPVERFM().isEmpty())
-			terminalEntityDb.setPVERFM(changeTerminal.getPVERFM());
+			terminalEntityDb.setPverfm(changeTerminal.getPVERFM());
 		
 		if(changeTerminal.getSam() != null)
 			terminalEntityDb.setSam(changeTerminal.getSam());

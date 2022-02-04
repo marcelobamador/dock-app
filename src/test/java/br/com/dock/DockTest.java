@@ -41,7 +41,7 @@ public class DockTest {
     	entity.setMxr(0);
     	entity.setPlat(4);
     	entity.setPtid("F04A2E4088B");
-    	entity.setPVERFM("PWWIN");
+    	entity.setPverfm("PWWIN");
     	entity.setSam(0);
     	entity.setSerial("123");
     	entity.setVersion("8.00b3");
