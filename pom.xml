@@ -42,7 +42,17 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<!--<scope>test</scope> -->
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.json</groupId>
+					<artifactId>json</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.vaadin.external.google</groupId>
+					<artifactId>android-json</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		
 		<dependency> 
@@ -59,6 +69,20 @@
 		    <groupId>javax.ws.rs</groupId>
 		    <artifactId>javax.ws.rs-api</artifactId>
 		    <version>2.1.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.everit.json/org.everit.json.schema -->
+		<dependency>
+			<groupId>org.everit.json</groupId>
+			<artifactId>org.everit.json.schema</artifactId>
+			<version>1.5.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.8</version>
 		</dependency>
 	</dependencies>
 
