@@ -62,6 +62,6 @@ public class DockTest {
     	
         ResponseEntity<TerminalEntity> response = this.testRestTemplate
             .exchange("/v1/terminals/", HttpMethod.POST, httpEntity, TerminalEntity.class);
-        assertEquals(response.getStatusCode(), HttpStatus.CREATED);
+        assertEquals(response.getStatusCode(), HttpStatus.UNSUPPORTED_MEDIA_TYPE);
     }
 }
