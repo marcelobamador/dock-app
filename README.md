@@ -7,7 +7,7 @@ Para gravar os dados, foi utilizado o banco de dados H2 já embarcado na aplica�
 # Get<br />
   - Metodo...........: getAllTerminals<br />
   - Retorno..........: Retorna uma lista de todos os terminais cadastrados<br />
-  - Url..............: http://localhost:9180/v1/terminals<br />
+  - Url..............: https://dock-test-app.herokuapp.com/v1/terminals<br />
   - Modelo de retorno:<br />
       {<br />
         "logic": 44332211,<br />
@@ -26,7 +26,7 @@ Para gravar os dados, foi utilizado o banco de dados H2 já embarcado na aplica�
   - Metodo...........: getAllTerminalsById<br />
   - Entrada..........: id (equivalente ao campo 'logic')<br />
   - Retorno..........: Retorna o objeto pesquisado caso exista no banco de dados.<br />
-  - Url..............: http://localhost:9180/v1/terminals/44332211<br />
+  - Url..............: https://dock-test-app.herokuapp.com/v1/terminals/44332211<br />
   - Modelo de retorno:<br />
       {<br />
         "logic": 44332211,<br />
@@ -57,7 +57,7 @@ Para gravar os dados, foi utilizado o banco de dados H2 já embarcado na aplica�
         "PVERFM":”PWWIN"<br />
       }<br />
   - Retorno............: Retorna o objeto alterado caso exista no banco de dados.<br />
-  - Url................: http://localhost:9180/v1/terminals/44332211<br />
+  - Url................: https://dock-test-app.herokuapp.com/v1/terminals/44332211<br />
   - Modelo de retorno..:<br />
       {<br />
         "logic": 44332211,<br />
@@ -77,7 +77,7 @@ Para gravar os dados, foi utilizado o banco de dados H2 já embarcado na aplica�
   - Obs................: Para que seja aceito a string enviada, deve-se colocar na requisição o header: Content-Type: text/html. Se for enviado como JSON não será aceito.
   - Body da requisição.: 44332211;123;PWWIN;0;F04A2E4088B;4;8.00b3;0;16777216;PWWIN<br />
   - Retorno............: Retorna o objeto cadastrado no banco de dados.<br />
-  - Url................: http://localhost:9180/v1/terminals<br />
+  - Url................: https://dock-test-app.herokuapp.com/v1/terminals<br />
   - Modelo de retorno..:<br />
       {<br />
         "logic": 44332211,<br />
