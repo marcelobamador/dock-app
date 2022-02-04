@@ -1,7 +1,7 @@
 # Desafio técnico DOCK
 O desafio foi desenvolvido utilizando a linguagem JAVA na sua versão 11. O JAVA foi escolhido por familiaridade.
 
-Para gravar os dados, foi utilizado o banco de dados H2 já embarcado na aplicação. O acesso ao banco de dados H2 dar-se após subir a aplicação e acessar o link: http://localhost:9180/h2 - Atualmente a porta da aplicação é 9180 (pode ser configurada no arquivo application.properties na propriedade server.port).
+Para gravar os dados, foi utilizado o banco de dados H2 já embarcado na aplicação. 
 
 # Foram criados 4 endpoints:<br />
 # Get<br />
@@ -98,4 +98,8 @@ Para gravar os dados, foi utilizado o banco de dados H2 já embarcado na aplica�
 - Clicar com o botão direito do mouse em cima do projeto -> Run as -> Maven Clean
 - Após o Maven clean, clicar com o botão direito do mouse em cima do projeto -> Run as -> Maven Install
 - Após o Maven Install, clicar com o botão direito do mouse em cima do projeto -> Run as -> Spring boot app
-- Com os passos acima, o projeto vai subir na porta 9180 e poderá ser acessado assim: http://localhost:9180/v1/terminals e utilizar os endpoinst relatados acima
+- Com os passos acima, o projeto vai subir na porta 9180 e poderá ser acessado assim: http://localhost:9180/v1/terminals (local)
+
+# EXECUTAR A APLICAÇÃO NO HEROKU
+- A aplicação está disponivel no link: https://dock-test-app.herokuapp.com 
+- Os endpoints a serem utilizados estão acima.
